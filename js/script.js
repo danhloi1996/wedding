@@ -2,7 +2,7 @@
 
 	"use strict";
 
-
+    console.log('init script')
 
     /*------------------------------------------
         = ALL ESSENTIAL FUNCTIONS
@@ -396,8 +396,8 @@
     /*------------------------------------------
         = COUNTDOWN CLOCK
     -------------------------------------------*/
-    if ($("#clock").length) {
         console.log($("#clock").length, 111)
+    if ($("#clock").length) {
         $('#clock').countdown('2022/7/9', function(event) {
             console.log(event)
             var $this = $(this).html(event.strftime(''
